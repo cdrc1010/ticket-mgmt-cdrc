@@ -1,0 +1,54 @@
+.input{
+    margin: 20px 0;
+}
+
+input{
+    border:1px solid #E9E9E9;
+    line-height: 20px;
+    font-size:20px;
+    padding: 10px;
+}
+
+input:hover
+{
+    border:1px solid #262626;
+}
+
+input[type=text]:focus {
+    outline:none;
+    border: 2px solid #262626;
+  }
+.submit{
+    background: black;
+    color:white;
+    padding:10px 20px;
+    border-radius: 8px;
+    width:300px;
+    font-size: 20px;
+}
+
+select{
+    width:265px;
+    height: 40px;
+    border: none;
+    border:1px solid #E9E9E9;
+}
+
+select:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 480px) {
+    input[type='text']{
+        width:94%;
+    }
+    select{
+        font-size:10px;
+        width: 100%;
+    }
+
+    .submit{
+        font-size:10px;
+        width:70%;
+    }
+}

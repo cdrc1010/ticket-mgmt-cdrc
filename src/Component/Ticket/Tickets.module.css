@@ -1,0 +1,149 @@
+.ticketContainer{
+    width:40%;
+    box-shadow: rgb(0 0 50/20%) 0px 2px 25px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    height:50vh;
+    margin: 0 auto;
+    padding-right:30px;
+}
+
+.ticketContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.totalSpContainer{
+    box-shadow: rgba(0,0,0,.5) 0px 0px 10px;
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px 35px 10px 15px;
+}
+
+
+.totalSpRow{
+    width: 100%;
+    text-align: left;
+    height: 30px;
+    margin: 10px auto;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding:10px;
+    box-shadow: rgba(0,0,0,.5) 0px 0px 10px;
+    opacity: .6;
+    transition: .5s;
+}
+
+.totalSpRow:hover{
+    opacity: 1;
+}
+
+.spValue{
+    background: #262626;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    float: right;
+}
+
+
+.filterContainer{
+    width: 44%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.btnClear{
+    background: black;
+    color:white;
+    border-radius: 8px;
+    width:100px;
+    height: 30px;
+    font-size: 20px;
+    border: none;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+   .totalSpContainer{
+    width: auto;
+   }
+   h2{
+    font-size: 15px;
+   }
+
+   .totalSpRow{
+    width: auto;
+    font-size:10px;
+
+   }
+
+   .ticketContainer{
+    width: auto;
+    margin:0 10px;
+    padding:0;
+   }
+   
+   .ticketItem{
+    margin:0;
+    padding: 0;
+   }
+
+   .filterContainer{
+    padding:10px;
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+   }
+
+   .filterContainer div{
+    margin: 10px 0;
+
+   }
+
+   .btnClear,
+   .filterLabel{
+    font-size:16px;
+   }
+
+   ul{
+    padding: 0;
+   }
+
+
+
+  }
+
+  @media only screen and (min-width: 600px) {
+    .totalSpContainer{
+        width: 80%;
+    }
+
+    .totalSpRow{
+        width: auto;
+        font-size:18px;
+    }
+
+    .filterContainer{
+        margin:20px auto;
+    }
+
+    .filterContainer div{
+        margin:0 10px;
+    }
+    .ticketContainer{
+        width: 90%;
+        margin:0 auto;
+        padding:0;
+    }
+  }
